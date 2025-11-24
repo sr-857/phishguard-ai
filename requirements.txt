@@ -8,3 +8,4 @@ joblib
 regex
 fastapi
 uvicorn
+slowapi
