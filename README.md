@@ -1,6 +1,6 @@
 <div align="center">
 
-![PhishGuard AI Logo](.github/logo.png)
+<img src=".github/logo.png" width="200" alt="PhishGuard AI Logo">
 
 # 🛡️ PhishGuard AI
 ### Next-Gen AI Phishing Detection System
