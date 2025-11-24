@@ -10,10 +10,12 @@ function App() {
   const [history, setHistory] = useState([])
   const [systemStatus, setSystemStatus] = useState('Checking...')
 
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const response = await fetch('http://localhost:8000/')
+        const response = await fetch(`${API_URL}/`)
         if (response.ok) {
           setSystemStatus('Online')
         } else {
@@ -36,7 +38,7 @@ function App() {
     setResult(null)
 
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch(`${API_URL}/predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
