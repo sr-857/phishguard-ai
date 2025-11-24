@@ -12,7 +12,8 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-**🌐 [View Live Demo](https://sr-857.github.io/phishguard-ai/)** | 
+### 🌐 **Live Demo:** [https://sr-857.github.io/phishguard-ai/](https://sr-857.github.io/phishguard-ai/)
+
 [Features](#-features) •
 [Installation](#-installation) •
 [Usage](#-usage) •
