@@ -45,13 +45,35 @@ web: uvicorn src.api:app --host 0.0.0.0 --port $PORT
 
 ### Option 2: Render (Full Stack)
 
-1. **Backend on Render**
-   - Create new Web Service
-   - Connect GitHub repo
-   - Build command: `pip install -r requirements.txt`
-   - Start command: `uvicorn src.api:app --host 0.0.0.0 --port $PORT`
+## ☁️ Option 2: Deploy to Render (Free Forever)
 
-2. **Frontend on Render**
+**Pros:** Free forever, no credit card required.
+**Cons:** Spins down after 15 mins of inactivity (30s cold start).
+
+### Method A: Using Blueprint (Recommended)
+1. Push the `render.yaml` file I just created to GitHub.
+2. Go to [Render Dashboard](https://dashboard.render.com/).
+3. Click **New +** -> **Blueprint**.
+4. Connect your GitHub repository.
+5. Click **Apply**.
+
+### Method B: Manual Setup
+1. Go to [Render Dashboard](https://dashboard.render.com/).
+2. Click **New +** -> **Web Service**.
+3. Connect your repository `sr-857/phishguard-ai`.
+4. Configure:
+   - **Name**: `phishguard-api`
+   - **Runtime**: `Python 3`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `uvicorn src.api:app --host 0.0.0.0 --port $PORT`
+5. Click **Create Web Service**.
+
+### 🔗 Post-Deployment
+1. Copy your new Render URL (e.g., `https://phishguard-api.onrender.com`).
+2. Update your GitHub Actions workflow:
+   - Edit `.github/workflows/deploy.yml`
+   - Update `VITE_API_URL` with the new Render URL.
+3. Push changes to redeploy frontend.
    - Create new Static Site
    - Build command: `cd frontend && npm install && npm run build`
    - Publish directory: `frontend/dist`
