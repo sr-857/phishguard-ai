@@ -76,6 +76,18 @@
 4. **Scan History**: Chronological feed of all analyzed emails
 5. **System Status**: Real-time engine health monitoring
 
+### 🎥 Live Demo
+
+Watch PhishGuard AI in action:
+
+![Live Demo Recording](.github/dashboard_demo_1763963867984.webp)
+
+**Try it yourself:**
+1. Clone the repository
+2. Run `./run_system.sh`
+3. Open http://localhost:5173
+4. Paste a suspicious email and click "SCAN FOR THREATS"
+
 ---
 
 ## 🛠️ Tech Stack
