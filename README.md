@@ -12,8 +12,8 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
+**🌐 [View Live Demo](#) (Coming Soon)** | 
 [Features](#-features) •
-[Demo](#-demo) •
 [Installation](#-installation) •
 [Usage](#-usage) •
 [Architecture](#-architecture) •
