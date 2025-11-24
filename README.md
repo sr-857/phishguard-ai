@@ -3,21 +3,19 @@
 ![PhishGuard AI Logo](.github/logo.png)
 
 # 🛡️ PhishGuard AI
+### Next-Gen AI Phishing Detection System
 
-### Next-Generation AI-Powered Phishing Detection System
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![React](https://img.shields.io/badge/React-18-61DAFB.svg?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)](https://reactjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-
-### 🌐 **Live Demo:** [https://sr-857.github.io/phishguard-ai/](https://sr-857.github.io/phishguard-ai/)
+### 🚀 **[Launch Live Demo](https://sr-857.github.io/phishguard-ai/)** 🚀
 
 [Features](#-features) •
-[Installation](#-installation) •
-[Usage](#-usage) •
 [Architecture](#-architecture) •
+[Installation](#-installation) •
 [API](#-api-documentation) •
 [Contributing](#-contributing)
 
@@ -25,41 +23,27 @@
 
 ---
 
-## 🎯 Overview
+## 💡 The Problem
+Phishing attacks account for **90% of all data breaches**, with AI-generated scams becoming increasingly difficult to detect. Traditional rule-based filters struggle to keep up with these sophisticated threats.
 
-**PhishGuard AI** is an advanced, real-time phishing email detection system that leverages machine learning to protect users from sophisticated phishing attacks. Built with a modern tech stack featuring React, FastAPI, and scikit-learn, it provides instant threat analysis with **98.3% accuracy**.
+## 🛡️ The Solution
+**PhishGuard AI** is an intelligent defense layer that leverages Machine Learning (Logistic Regression) and Natural Language Processing (NLP) to analyze email intent, context, and linguistic patterns in real-time.
 
-### Why PhishGuard AI?
-
-- **🎯 High Recall (91.3%)**: Minimizes false negatives to catch more phishing attempts
-- **⚡ Real-Time Analysis**: Instant email classification with confidence scores
-- **🎨 Modern UI**: Cybersecurity-themed dashboard with glassmorphism and neon aesthetics
-- **🔒 Privacy-First**: All processing happens locally - no data sent to third parties
-- **📊 Transparent**: View detailed forensic analysis and model confidence for every prediction
+> **"Don't just block. Understand."**
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### Core Functionality
-- ✅ **AI-Powered Detection**: Logistic Regression model trained on SMS Spam Collection dataset
-- ✅ **Real-Time Threat Feed**: Live history of scanned emails with threat levels
-- ✅ **Confidence Scoring**: Probability-based classification with detailed analysis
-- ✅ **System Health Monitoring**: Real-time backend connectivity status
+### 🧠 Intelligent Detection
+- **98.3% Accuracy**: Trained on the SMS Spam Collection dataset.
+- **High Recall (91.3%)**: Prioritizes catching threats to minimize missed attacks.
+- **Real-Time Analysis**: Sub-100ms inference time.
 
-### User Experience
-- 🎨 **Cybersecurity Dashboard**: Dark mode with glassmorphism effects
-- 🌊 **Digital Rain Animation**: Matrix-style background for immersive experience
-- 🎯 **Custom Cursor**: Targeting crosshair design for enhanced UX
-- 📱 **Responsive Design**: Works seamlessly across all devices
-- ⭐ **Testimonials Section**: Industry leader endorsements
-
-### Technical Features
-- 🔄 **RESTful API**: FastAPI backend with automatic documentation
-- 📦 **Modular Architecture**: Separation of concerns for maintainability
-- 🧪 **Comprehensive Testing**: Model evaluation with multiple metrics
-- 📝 **Detailed Logging**: Full request/response tracking
-- 🚀 **Easy Deployment**: One-command launch script
+### 🎨 Next-Gen UI/UX
+- **Cyberpunk Aesthetic**: Glassmorphism, neon accents, and Digital Rain effects.
+- **Live Threat Feed**: Real-time visualization of scanned emails.
+- **Forensic Breakdown**: Detailed confidence scores and probability analysis.
 
 ---
 
