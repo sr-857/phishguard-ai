@@ -178,8 +178,8 @@ npm run dev
 
 ```mermaid
 graph TD
-    User[👤 User] -->|Access Dashboard| Frontend[⚛️ React Frontend\n(GitHub Pages)]
-    Frontend -->|POST /predict| Backend[🚀 FastAPI Backend\n(Railway)]
+    User[👤 User] -->|Access Dashboard| Frontend["⚛️ React Frontend<br>(GitHub Pages)"]
+    Frontend -->|POST /predict| Backend["🚀 FastAPI Backend<br>(Railway)"]
     
     subgraph "Backend Services"
         Backend -->|Text Processing| NLP[📝 NLTK Preprocessing]
