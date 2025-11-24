@@ -15,7 +15,11 @@ app = FastAPI(title="Phishing Classifier API", version="1.0")
 # CORS Middleware to allow requests from React Frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origin
+    allow_origins=[
+        "https://sr-857.github.io",  # GitHub Pages
+        "http://localhost:5173",      # Local development
+        "*"                            # Allow all for development (remove in production)
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
