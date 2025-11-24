@@ -8,7 +8,9 @@ from nltk.stem import PorterStemmer
 # However, for a standalone inference script, we might want it self-contained or import from data_loader
 from data_loader import clean_text
 
-MODELS_DIR = "models"
+# Define paths relative to this script to ensure they work from anywhere
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
 
 def load_resources(model_name='Logistic_Regression'):
     """Loads the vectorizer and the specified model."""

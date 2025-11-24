@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
+import DigitalRain from './components/DigitalRain'
+import Testimonials from './components/Testimonials'
 
 function App() {
   const [emailText, setEmailText] = useState('')
@@ -67,11 +69,12 @@ function App() {
     <div className="app-container">
       <div className="background-container">
         <div className="background-image"></div>
+        <DigitalRain />
         <div className="scanlines"></div>
       </div>
 
       <div className="hero-section">
-        <h1 className="hero-title">SENTINEL AI</h1>
+        <h1 className="hero-title">PHISHGUARD AI</h1>
         <p className="hero-subtitle">Next-Generation Phishing Detection System</p>
       </div>
 
@@ -148,6 +151,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Testimonials />
 
       <footer className="app-footer">
         <div className="glass-card footer-content">
