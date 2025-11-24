@@ -172,6 +172,39 @@ cd frontend
 npm run dev
 ```
 
+---
+
+## 🏗️ Architecture
+
+```mermaid
+graph TD
+    User[👤 User] -->|Access Dashboard| Frontend[⚛️ React Frontend\n(GitHub Pages)]
+    Frontend -->|POST /predict| Backend[🚀 FastAPI Backend\n(Railway)]
+    
+    subgraph "Backend Services"
+        Backend -->|Text Processing| NLP[📝 NLTK Preprocessing]
+        NLP -->|Vectorization| TFIDF[🧮 TF-IDF Vectorizer]
+        TFIDF -->|Inference| Model[🤖 Logistic Regression Model]
+    end
+    
+    Model -->|Prediction & Score| Backend
+    Backend -->|JSON Response| Frontend
+    Frontend -->|Visual Feedback| User
+    
+    style Frontend fill:#61DAFB,stroke:#333,stroke-width:2px,color:black
+    style Backend fill:#009688,stroke:#333,stroke-width:2px,color:white
+    style Model fill:#FF9800,stroke:#333,stroke-width:2px,color:black
+```
+
+### Data Flow
+1. **Input**: User pastes email content into the React dashboard.
+2. **Request**: Frontend sends a secure API request to the FastAPI backend.
+3. **Processing**: Backend cleans text (stopwords, stemming) and vectorizes it.
+4. **Inference**: ML model predicts probability of phishing.
+5. **Response**: Result is returned and visualized with confidence scores.
+
+---
+
 ### Testing the System
 
 1. Open http://localhost:5173 in your browser
