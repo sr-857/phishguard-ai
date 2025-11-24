@@ -1,0 +1,10 @@
+pandas
+nltk
+scikit-learn
+matplotlib
+seaborn
+streamlit
+joblib
+regex
+fastapi
+uvicorn
